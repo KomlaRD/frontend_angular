@@ -20,10 +20,18 @@
             </mat-card-content>
         </mat-card>
     </div>
+    <div fxFlex="40" *ngFor="let dish of dish.comments">
+        <mat-list>
+            <mat-list-item matList>
+                {{dish.comment}}
+            </mat-list-item>
+            <mat-list-item>
+                {{dish.rating}}
+            </mat-list-item>
+            <mat-list-item>
+                --{{dish.author}} {{ dish.date | date : 'mediumDate'}}
+            </mat-list-item>
+        </mat-list>
+    </div>
   </div>
-
-  <div fxFlex="40">
-    <p>Display the list of comments here</p>
-  </div>
-
 </div>

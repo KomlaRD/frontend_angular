@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { LoginComponent } from '../login/login.component';
-import { faHome, faList, faAddressCard, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faList, faAddressCard, faInfo, faSignIn } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -16,6 +16,7 @@ export class HeaderComponent {
   faList = faList;
   faAddressCard = faAddressCard;
   faInfo = faInfo;
+  signIn = faSignIn;
 
   constructor(public dialog: MatDialog){
 

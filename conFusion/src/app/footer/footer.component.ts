@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faGooglePlus, faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  googlePlus = faGooglePlus;
+  facebook = faFacebook;
+  linkedin = faLinkedin;
+  twitter = faTwitter;
+  youtube = faYoutube;
+  envelope = faEnvelope;
 }
